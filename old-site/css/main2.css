@@ -8,18 +8,18 @@ body{
 	margin: 0;
 }
 
-p#hero-txt{
-	font: white 16pt;
-}
-
 /* cover image */
 .image{
-	background-image: url('../../designs/assets/bg.jpg');
- 	opacity:.5;
-	background-size: cover;
-	background-position: top;
 	height: 54.2%;
 	width: 100%; 
+	background: 
+	  linear-gradient(
+      rgba(201, 68, 67, 0.65), 
+      rgba(201, 68, 67, 0.65) 
+    ),
+    url('../../designs/assets/bg.jpg');
+	background-size: cover;
+	background-position: top;
 }
 
 /* header */
@@ -104,6 +104,18 @@ p.info{
 	display:inline-block;
 	text-align: left;
 }
+
+.intro-txt{
+	margin: auto;
+	text-align: center;
+
+}
+.hero-txt {
+margin: 0;
+color: white;
+}
+
+
 /*#icon1{
 	padding: 55px;
 	margin: 50px 25px 25px 25px;
