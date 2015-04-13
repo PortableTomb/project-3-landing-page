@@ -1,3 +1,6 @@
+* {
+  box-sizing(border-box);
+}
 
 body{
 	font-family: 'Open Sans', sans-serif; 
@@ -5,60 +8,164 @@ body{
 	margin: 0;
 }
 
+p#hero-txt{
+	font: white 16pt;
+}
+
 /* cover image */
 .image{
 	background-image: url('../../designs/assets/bg.jpg');
- 	opacity: .5;
+ 	opacity:.5;
 	background-size: cover;
 	background-position: top;
 	height: 54.2%;
 	width: 100%; 
 }
 
-/* navigation */
-.header  {
+/* header */
+#header  {
 	text-align: center;
+	width: 100%;
+	margin-top: 25px;
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-bottom: 5px;
+	padding: 0 auto;
 } 
 
+#sub-header {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+/* navigation */
+/* lower menu text*/
 #upper-menu{
-	width:100%;
+	height: 33%;
+	width: 100%;
+	margin-top: 25px;
 }
 
 .menu-nav {
+	display: table; 
 	width:100%;
+	margin: auto;
+	padding: auto;
+	list-style-type: none;
+	}
+
+ul#nav-icons {
+	opacity:.5;
+	text-align: center;
+	min-width: auto;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul#nav-icons li{
+	display: inline-block;
+}
+
+ul#nav-icons p{
+	margin: 0;
+	padding: 0;
+}
+
+#nav-icons {
+	width: 100%;
+    margin: 0;
+	list-style-type: none;
+	}
+
+li.nav-icon {
+	width: 33%;
+	float: left;
+}
+.circle{
+	height: 150px;
+	width: 150px;
+	background: gray;
+	border-radius: 50%;
+	margin: auto;
+	margin-bottom: 33px;
+}
+
+.vert-center{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+p.info{
+	font-size: 9pt;
+	width: 205px;
+	display:inline-block;
+	text-align: left;
+}
+/*#icon1{
+	padding: 55px;
+	margin: 50px 25px 25px 25px;
+	background: gray;
+	border-radius: 50%;
+	float: left;
+}
+#icon2{
+	padding: 55px;
+	margin: 50px 25px 25px 25px;
+	background: gray;
+	border-radius: 50%;
+}
+#icon3{
+	padding: 55px;
+	margin: 50px 25px 25px 25px;
+	background: gray;
+	border-radius: 50%;
+}*/
+
+
+/* lower menu text
+#lower-menu{
+	font-size: 11px;
+	width:100%;
+}
+
+.text-nav{
+	display: table; 
+	width:75%;
 	margin: 0 auto;
 	padding: 0 auto;
 	list-style-type: none;
-	text-align: center;
-	}
+	float: right;
+}
 
-#nav-icons {
-	width: 50%;
+ul#text{
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+ul#text li{
+	width:25%;
+	margin: 0 auto;
+	padding: 0 auto;
+	display: inline-block;
+	float: left;
+}
+
+ul#text p{
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+#text {
+	width: 100%;
     margin: 0 auto;
 	list-style-type: none;
-	float:center;
-	clear: both;
-	}
+	}*/
 
-#icon1{
-	
-}
-#icon2{
-	
-}
-#icon3{
 
-}
 
-#lower-menu{
-	width:100%;
-}
 
-#text{
-	list-style-type: none;
-	text-align: center;
-}
 
-.info {
-
-}
+	padding: auto;	marg
