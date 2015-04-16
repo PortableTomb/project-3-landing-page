@@ -2,6 +2,14 @@
   box-sizing(border-box);
 }
 
+@media screen and(max-width: 1024) {
+#wrapper{
+	width:100%;
+	height: auto;
+	float: none;
+}
+}
+
 body{
 	font-family: 'Open Sans', sans-serif; 
 	height: 150vh;
@@ -20,6 +28,7 @@ body{
     url('../../designs/assets/bg.jpg');
 	background-size: cover;
 	background-position: top;
+	background-repeat: no-repeat;
 }
 
 /* header */
@@ -111,8 +120,23 @@ p.info{
 
 }
 .hero-txt {
-margin: 0;
-color: white;
+	margin: 0;
+	color: white;
+}
+
+.info-box{
+	width: 210px;
+	height: 55px;
+	margin: auto;
+	padding: 0;
+}
+
+p.info{
+	display: none;
+}
+
+.circle:hover + .info-box p.info{
+	display: inline-block;
 }
 
 
@@ -180,4 +204,4 @@ ul#text p{
 
 
 
-	padding: auto;	marg
+	
