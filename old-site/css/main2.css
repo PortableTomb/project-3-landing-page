@@ -1,13 +1,44 @@
 
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
 
 * {
   box-sizing(border-box);
 }
 
 @media (max-width: 575px) {
+
+  #header{
+  	position: relative;
+	text-align: center;
+	margin: auto;
+  	font-size: 1.25em;
+  	line-height: 2em;
+  }
+
+  #sub-header{
+  	position: relative;
+	text-align: center;
+	margin: 0 auto;
+  	font-size: .75em;
+  }
+
   ul#nav-icons li{ 
-  	clear: both;
-  	margin: auto 31%;
+  	display:block;
+  	float:none;
+  	margin: auto;
+  	width:60%;
     padding-bottom: 25px;
     text-align: center;
     min-height: 100px;
@@ -18,7 +49,25 @@
 	height: 50%;
 	width: 50%;
 }
-.vert-center{}
+
+.nav-icon{
+margin-top: 25px;
+}
+
+.intro-txt{
+	left: 5%;
+	right:5%;
+
+}
+h1 .hero-txt{
+	font-size: .25em;
+
+}
+.info-box {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
 }
 
 body{
@@ -46,20 +95,16 @@ body{
 
 /* header */
 span #header {
-	position: absolute;
+	position: relative;
 	text-align: center;
 	width: 100%;
-	margin-top: 25px;
-	margin-left: auto; 
-	margin-right: auto; 
+	margin-top: 25px; 
 	margin-bottom: 5px;
-	padding: 25px;
 } 
 
 span #sub-header {
 	text-align: center;
 	margin: 0 auto;
-	padding: 25px;
 }
 
 /*navigation*/
@@ -71,6 +116,7 @@ span #sub-header {
 }
 
 .menu-nav {
+	padding-top: 25px;
 	display: table; 
 	width:100%;
 	margin: auto;
@@ -92,7 +138,7 @@ ul#nav-icons li{
 }
 
 ul#nav-icons p{
-	margin: 0;
+	margin:  0;
 	padding: 0;
 }
 
@@ -135,8 +181,8 @@ p.info{
 	position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left:30%;
-    right: 30%;
+    left:10%;
+    right: 10%;
 }
 .hero-txt {
 	margin: 0 auto;
@@ -144,12 +190,17 @@ p.info{
 	text-align: center;
 }
 
+h1.hero-txt{
+	font-size: 48px;
+}
+
 .info-box{
 	width: 210px;
-	height: 55px;
-	margin: auto;
-	padding: 0;
+	height: 75px;
+	margin: 0 auto;
+	padding-bottom: 20px;
 }
+
 
 p.info{
 	display: none;
