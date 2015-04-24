@@ -39,5 +39,8 @@ section#height {
 }
 
 div#none{
-
+	background: inherit;
 }
+
+
+
