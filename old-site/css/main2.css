@@ -1,18 +1,4 @@
 
-.clearfix:before,
-.clearfix:after {
-  content: "";
-  display: table;
-}
- 
-.clearfix:after {
-  clear: both;
-}
- 
-.clearfix {
-  zoom: 1; /* ie 6/7 */
-}
-
 * {
   box-sizing(border-box);
 }
@@ -21,7 +7,7 @@
 
   #header{
   	position: relative;
-	text-align: center;
+	text-align: center
 	margin: auto;
   	font-size: 1.25em;
   	line-height: 2em;
@@ -49,19 +35,15 @@
 	height: 50%;
 	width: 50%;
 }
-
 .nav-icon{
 margin-top: 25px;
 }
-
 .intro-txt{
 	left: 5%;
 	right:5%;
-
 }
 h1 .hero-txt{
 	font-size: .25em;
-
 }
 .info-box {
 	text-align: center;
@@ -161,11 +143,6 @@ li.nav-icon {
 	margin-bottom: 33px;
 }
 
-.vert-center{
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
 
 p.info{
 	font-size: 9pt;
@@ -176,13 +153,6 @@ p.info{
 
 .intro-txt{
 	margin: 0;
-	display: inline;
-	text-align: center;
-	position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left:10%;
-    right: 10%;
 }
 .hero-txt {
 	margin: 0 auto;
